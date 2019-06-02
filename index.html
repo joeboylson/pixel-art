@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PIXEL ART</title>
+
+    <script src="./js/pixelArt.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./style/main.css">
+
+</head>
+
+<body>
+
+    <div id="pixelart">
+        <!-- art will appear here -->
+    </div>
+
+</body>
+
+<script>
+
+    // usage
+
+    // declare your colors
+    colors = [
+        'transparent', '#F22613', '#F22613', 'transparent', '#F22613', '#F22613', 'transparent',
+        '#F22613', '#F22613', '#F22613', '#F22613', '#F22613', '#F22613', '#F22613',
+        '#F22613', '#F22613', '#F22613', '#F22613', '#F22613', '#F22613', '#F22613',
+        'transparent', '#F22613', '#F22613', '#F22613', '#F22613', '#F22613', 'transparent',
+        'transparent', 'transparent', '#F22613', '#F22613', '#F22613', 'transparent', 'transparent',
+        'transparent', 'transparent', 'transparent', '#F22613', 'transparent', 'transparent', 'transparent',
+    ]
+
+    // pass them to the object
+        // elementId: the id of the element you want to apply your art to
+        // rows: the number of "pixels" across
+        // cols: the number of "pixels" down
+        // colors: your array of colors; must be equal to rows*cols
+        // unit: the unit of measurement
+
+    const pixelHeart = new pixelArt("pixelart", 6, 7, colors, '10px')
+    
+    // call generate to apply
+    pixelHeart.generate();
+
+</script>
+
+</html>
